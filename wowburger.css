@@ -1,0 +1,117 @@
+/*  reference google font styles  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/*  set index picture  */
+.bg{
+	/* Image Location */
+    background-image: url(wowburger1.jpg);
+	/* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+	/* Font Colour */
+    color:white;
+}
+/*  Set index orderButton image position  */
+.image-align img{    
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index: 2;
+    }
+/*  Set index orderButton image hover  */
+#orderButton:hover{
+    border:5px solid whitesmoke;
+}
+/*  MENU and ORDER background-image set up  */
+.moBody{background-image: url(BG1.png);}
+
+/*  MENU Page Table Location */
+#menuTable{
+    margin:auto;
+    margin-top:80px;
+    width:1230px;
+    height:710px;
+}
+/*  Set MENU table tr and td */
+#menuTable,#menuTable tr,#menuTable td{
+                    border:1px solid black;
+                    border-collapse:collapse;
+                    text-align:center;
+}
+/*  Design three burger pictures style  */
+.threepic{
+    width:400px;
+    height:700px;
+}
+/*  Set three burger pictures hover */
+.threepic:hover{
+    z-index:1;
+    border: 5px solid whitesmoke;
+}
+/*  Design ORDER page table style  */
+#orderTable{
+    background-color:#FF5A33;
+    height:680px;
+    border:1px solid #FF5A33;
+    margin:auto;
+    margin-top:70px;
+    border-collapse: collapse;
+    border-radius: 25px;
+}
+/*  Set ORDER page table th, tr and td */
+#orderTable,#orderTable th,#orderTable tr,#orderTable td{padding:20px; border:0; }
+
+/*  Set ORDER page table th font-size */
+#thead{font-family: 'Satisfy', cursive; color:black; font-size:50px;}
+
+/*  Design ORDER page table td style */
+.col1{
+    font-family: 'Oswald', sans-serif;
+    color:black;
+    font-size:20px;
+    text-align:center;
+    width:120px;
+    height:40px;
+}
+/*  Design ORDER page table td input style */
+.col2{
+    background-color:white;
+    border:1px solid #C0C0C0;
+    color:gray;
+    height:35px;
+}
+/*  Design Burger Size drop down menu style */
+#col3{
+    background-color:white;
+    border:1px solid #C0C0C0;
+    color:black;
+    height:40px;
+    width:300px;
+}
+/*  Design ORDER page Submit style */
+.col4{
+    background-color:black;
+    border:5px solid black;
+    color:white;
+    border-radius: 10px;
+    font-size:30px;
+	width:300px;
+}
+/*  Set Submit hover */
+.col4:hover{
+    z-index:1;
+    border:5px solid lightgray;
+}
+
+
+

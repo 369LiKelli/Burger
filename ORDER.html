@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> ORDER ONLINE </title>
+        <link rel = "stylesheet" href = "wowburger.css">
+        <script src="order.js"></script>
+    </head>
+    <body class="moBody">
+        <!--------------------form wrapper-------------------->
+        <form>
+            <table id="orderTable">
+                <tr>
+                    <th id="thead" colspan="2" height="18">Order&nbsp;&nbsp;&nbsp;Online</th>
+                </tr>
+                <!----------------Username---------------->
+                <tr>
+                    <td class="col1"><label for="userName">Username:</label></td>
+                    <td><input class="col2" type="text" id="userName" name="userName" value="Enter your name" size="40" required placeholder="Enter your name"
+                      onfocus="if(value=='Enter your name'){value='';}"  onblur="if (value ==''){value='Enter your name'}"/></td>
+                </tr>
+                <!----------------Password---------------->
+                <tr>
+                    <td class="col1"><label for="pwd">Password:</label></td>
+                    <td><input class="col2" type="password" id="pwd" name="pwd" value="Enter your password" size="40" min="1" maxlength="9" required placeholder="Enter your password"
+                      onfocus="if(value=='Enter your password'){value='';}"  onblur="if (value ==''){value='Enter your password'}"/></td>
+                </tr>
+                <!----------------Burger Size---------------->
+            <tr>
+                <td class="col1" ><label for="col3">Burger Size:</label></td>
+                <td><select name="Burger Size" id="col3" onchange="testIn()">
+                <option value="option1"> 6oz Large </option>
+                <option value="option2"> 10oz Extra-Large </option>
+                <option value="option3">16oz Supersize</option>
+                </select>
+                </td>
+            </tr>
+            <!----------------Quantity---------------->
+                <tr>
+                    <td class="col1" ><label for="quantity">Quantity:</label></td>
+                    <td><input class="col2" type="number" id="quantity" name="quantity" value="1" min="1" style="width:295px"
+                      onfocus="if(value=='Enter the number of burgers'){value='';}"  onblur="if (value ==''){value='Enter the number of burgers'}"/></td>
+                </tr>
+                <!----------------Discount Code---------------->
+                <tr>
+                    <td class="col1" ><label for="discountCode">Discount Code:</label></td>
+                    <td><input class="col2" type="text" id="discountCode" name="discountCode" value="Enter discount code" size="40" required placeholder="Enter discount code"
+                      onfocus="if(value=='Enter discount code'){value='';}"  onblur="if (value ==''){value='Enter discount code'}"/></td>
+                </tr>
+                <!----------------Submit---------------->
+                <tr>
+                    <td colspan="2" align="center" ><input class="col4" type="button" value="Submit" onclick="alert('Enter discount code to get a best price!')"/></td>
+                </tr>
+                <!----------------Cancel---------------->				
+				<tr>
+                    <td colspan="2" align="center" ><input class="col4" type="button" value="Cancel" style="width:200px" onclick="alert('Are you sure you wanna cancel?')"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
